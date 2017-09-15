@@ -1,0 +1,24 @@
+#contact{
+	background: $accentGold;
+	color: white;
+	.sectionHeader{
+		border-color: white;
+	}
+	p{
+		text-align: center;
+	}
+}
+form{
+	margin: 0 auto;
+}
+.inputContainer{
+	display: flex;
+	justify-content: space-between;
+}
+input{
+	width: calc(100% / 3);
+}
+textarea{
+	width: 100%;
+	margin: 3.5rem;
+}

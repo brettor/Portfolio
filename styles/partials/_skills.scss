@@ -1,0 +1,16 @@
+#skills{
+	background: $darkGrey;
+	color: white;
+	text-align: center;
+}
+.skillsContainer{
+	display: flex;
+	flex-wrap: wrap;
+	span, i, img{
+		width: 4rem;
+		font-size: 4rem;
+	}
+}
+.skillsItem{
+	width: 15.5rem;
+}

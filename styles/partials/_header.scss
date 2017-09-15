@@ -26,8 +26,9 @@ nav{
 	}
 	a{
 		padding: 1rem 2rem;
+		border: 0.1rem solid $darkGrey;
 		&:hover{
-			border: 0.1rem solid white;
+			border-color: white;
 		}
 	}
 }

@@ -1,0 +1,33 @@
+.socialContact{
+	display: flex;
+}
+.social{
+	background: $footerGrey;
+	color: white;
+}
+.contactItem{
+	width: calc(100% / 3);
+	text-align: center;
+	img{
+		margin: 0 auto;
+	}
+}
+.socialContainer{
+	display: flex;
+	justify-content: center;
+	i{
+		width: 3rem;
+		color: $accentGold;
+		transform: rotate(-45deg);
+	}
+}
+.socialItem{
+	width: 9rem;
+	height: 9rem;
+	margin: 6rem 2rem;
+	border: 0.2rem solid white;
+	transform: rotate(45deg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
