@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	border: 1px solid blue;
+}
+html{
+	font-size: 62.5%;
+	font-family: $bodyFont;
+}
+body{
+	font-size: 1.4rem;
+}
+img{
+	display: block;
+	max-width: 100%
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+button{
+	border: none;
+	height: 4.5rem;
+}
+h1, h2, h3, h4, h5, h6{
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1, h2, h3, h4, h5{
+	font-family: $headFont;
+}
+h1{
+	font-size: 5.5rem;
+}
+h2{
+	font-size: 3rem;
+}
+h3{
+	font-size: 2rem;
+}
+h4{
+	font-size: 1.6rem;
+}
+h5{
+	font-size: 1.4rem;
+}
+h6{
+	font-size: 1.6rem;
+}
+.wrapper{
+	max-width: 117rem;
+	margin: 0 auto;
+}
+.fa-rotate-45{
+	transform: rotate(45deg);
+	width: 1.2rem;
+	color: $accentGold;
+}
+.decorate{
+	// &::before{
+	// 	content: '';
+	// 	height: 0.1rem;
+	// 	width: 10rem;
+	// 	background: $accentGold;
+	// }
+	// &::after{
+	// 	content: '';
+	// 	height: 0.1rem;
+	// 	width: 10rem;
+	// 	background: $accentGold;
+	// }
+}
+.downArrow, .upArrow{
+	width: 4.6rem;
+	height: 4.6rem;
+	transform: rotate(45deg);
+	margin: 0 auto;
+	p{
+		transform: rotate(-45deg);
+		font-size: 2.3rem;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+.sectionHeader{
+	width: 23rem;
+	height: 6.5rem;
+	padding-top: 3rem;
+	margin: 0 auto;
+	text-align: center;
+	border: 0.3rem solid black;
+}

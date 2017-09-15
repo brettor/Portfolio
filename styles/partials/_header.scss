@@ -1,0 +1,48 @@
+header{
+	background: $darkGrey;
+	color: white;
+	padding: 3.5rem 0 2rem 0;
+	.fa{
+		margin: 2rem 0;
+	}
+}
+.logo{
+	width: 6rem;
+	height: 7rem;
+}
+.navBar{
+	display: flex;
+	justify-content: space-between;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-family: $headFont;
+	div{
+		display: flex;
+		align-items: center;
+	}
+	a{
+		padding: 1rem 2rem;
+		&:hover{
+			border: 0.1rem solid white;
+		}
+	}
+}
+.headingBar{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 22rem 0;
+}
+.mainHeading{
+	padding: 2.5rem 6.5rem;
+	margin-bottom: 3rem;
+	border: 0.3rem solid white;
+}
+.downArrow{
+	border: 0.2rem solid white;
+	color: $accentGold;
+}
