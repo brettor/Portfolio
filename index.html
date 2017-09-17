@@ -16,13 +16,14 @@
 	<header id="home">
 		<div class="wrapper">
 			<div class="navBar">
-				<img src="assets/logo2white.png" alt="My logo" class="logo">
+				<img src="assets/logo5white.png" alt="My logo" class="logo">
+				<div class="menuButton"><i class="fa fa-bars" aria-hidden="true"></i></div>
 				<nav>
-					<div><a href="home">Home</a></div>
-					<div><a href="about">About</a></div>
-					<div><a href="skills">Skills</a></div>
-					<div><a href="works">Works</a></div>
-					<div><a href="contact">Contact</a></div>
+					<div class="navItem"><a href="#home">Home</a></div>
+					<div class="navItem"><a href="#about">About</a></div>
+					<div class="navItem"><a href="#skills">Skills</a></div>
+					<div class="navItem"><a href="#works">Works</a></div>
+					<div class="navItem"><a href="#contact">Contact</a></div>
 				</nav>
 			</div> <!-- navBar -->
 			<div class="headingBar">
@@ -36,7 +37,7 @@
 			</div> <!-- headingBar -->
 		</div> <!-- wrapper -->
 		<div class="downArrow">
-			<p>↓</p>
+			<img src="assets/downarrow.png" alt="Down arrow">
 		</div>
 	</header>
 
@@ -265,24 +266,30 @@
 				<p>Lorem ipsum dolor sit amet, consectetur.</p>
 				<form action="">
 					<div class="inputContainer">
-						<input type="text" placeholder="Your name">
-						<div class="iconHolder">
-							<i class="fa fa-stop fa-rotate-45" aria-hidden="true"></i>
-						</div> <!-- iconHolder -->
-						<input type="email" required placeholder="Your email">
-						<div class="iconHolder">
-							<i class="fa fa-stop fa-rotate-45" aria-hidden="true"></i>
-						</div> <!-- iconHolder -->
-						<input type="tel" placeholder="Your phone">
-						<div class="iconHolder">
-							<i class="fa fa-stop fa-rotate-45" aria-hidden="true"></i>
-						</div> <!-- iconHolder -->
+						<div class="inputHolder">
+							<div class="iconHolder">
+								<i class="fa fa-stop fa-rotate-45" aria-hidden="true"></i>
+							</div> <!-- iconHolder -->
+							<input type="text" placeholder="Your name">
+						</div> <!-- inputHolder -->
+						<div class="inputHolder">
+							<div class="iconHolder">
+								<i class="fa fa-stop fa-rotate-45" aria-hidden="true"></i>
+							</div> <!-- iconHolder -->
+							<input type="email" required placeholder="Your email">
+						</div> <!-- inputHolder -->
+						<div class="inputHolder">
+							<div class="iconHolder">
+								<i class="fa fa-stop fa-rotate-45" aria-hidden="true"></i>
+							</div> <!-- iconHolder -->
+							<input type="tel" placeholder="Your phone">
+						</div> <!-- inputHolder -->
 					</div> <!-- inputContainer -->
-					<textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+					<textarea name="message" id="message" cols="30" rows="15" placeholder="Your message"></textarea>
 					<button>Submit</button>
 				</form>
 				<div class="upArrow">
-					<p>↑</p>
+					<img src="assets/uparrow.png" alt="Up arrow">
 				</div> <!-- upArrow -->
 			</div> <!-- wrapper -->
 		</section> <!-- contact -->
@@ -318,7 +325,7 @@
 					<div class="socialItem">
 						<a href="https://github.com/brettor"><i class="fa fa-github" aria-hidden="true"></i></a>
 					</div> <!-- socialItem -->
-				</div>
+				</div> <!-- socialContainer -->
 			</div> <!-- wrapper -->
 		</section> <!-- social -->
 	</main>
@@ -330,6 +337,21 @@
 			<p>Logo design by <a href="https://www.fiverr.com/davidtiberiu/design-a-good-looking-and-professional-logo?funnel=770a72e9-dd3e-4983-86ec-048754b9d629">Hivetex</a></p>
 		</div> <!-- wrapper -->
 	</footer>
-
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+<!-- 	<script>
+		$(function() {
+			// when .button-menu is clicked toggle the .open class on the nav
+			$(".menuButton").on("click", function(){
+				$(".menu").toggleClass("open");
+			});
+			// when links are clicked, collapse menu
+			$(".nav__item").on("click", function(){
+				$(".menu").toggleClass("open");
+			});
+			$("a").smoothScroll();
+		});
+	</script> -->
 </body>
 </html>

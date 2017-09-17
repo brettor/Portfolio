@@ -1,9 +1,13 @@
-.socialContact{
-	display: flex;
-}
 .social{
 	background: $footerGrey;
 	color: white;
+	padding: 8.5rem 0 5rem 0;
+	.fa-rotate-45{
+		margin: 2.5rem 0;
+	}
+}
+.socialContact{
+	display: flex;
 }
 .contactItem{
 	width: calc(100% / 3);
@@ -14,7 +18,10 @@
 }
 .socialContainer{
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	width: 55%;
+	margin: 0 auto;
+	margin-top: 3rem;
 	i{
 		width: 3rem;
 		color: $accentGold;
@@ -30,4 +37,5 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 3rem;
 }

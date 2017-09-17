@@ -1,11 +1,23 @@
 #contact{
 	background: $accentGold;
 	color: white;
+	padding: 10rem 0 8.5rem 0;
+	position: relative;
 	.sectionHeader{
 		border-color: white;
+		i{
+			font-size: 4rem;
+		}
 	}
 	p{
 		text-align: center;
+		margin: 4rem 0 5rem 0;
+	}
+	.fa-rotate-45{
+		color: white;
+		position: absolute;
+		left: 50%;
+		bottom: 1.4rem;
 	}
 }
 form{
@@ -15,10 +27,19 @@ form{
 	display: flex;
 	justify-content: space-between;
 }
-input{
+.inputHolder{
 	width: calc(100% / 3);
+	position: relative;
+}
+input{
+	width: 100%;
 }
 textarea{
 	width: 100%;
-	margin: 3.5rem;
+	margin: 3.5rem 0;
+}
+.upArrow{
+	background: $paleGold;
+	position: relative;
+	bottom: -10.8rem;
 }
