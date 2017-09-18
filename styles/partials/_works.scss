@@ -26,11 +26,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 4rem;
 	p{
-		font-size: 1rem;
+		font-size: 2rem;
 		font-family: $headFont;
-		font-weight: 100;
-		display: block;
 		transform: rotate(-45deg);
 	}
 }
@@ -44,7 +43,7 @@
 }
 .worksContainer{
 	position: relative;
-	padding: 8rem 0;
+	padding: 6rem 0 10rem 0;
 }
 .worksItem{
 	display: flex;

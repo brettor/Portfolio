@@ -16,12 +16,30 @@
 	p{
 		text-align: center;
 		margin: 4rem 0 5rem 0;
+		font-style: italic;
+		font-size: 1.8rem;
 	}
 	.fa-rotate-45{
 		color: white;
 		position: absolute;
 		left: 50%;
 		bottom: 1.4rem;
+	}
+	button{
+		border: 0.1rem solid white;
+		outline-offset: 0.3rem;
+		outline: 0.1rem solid white;
+		padding: 1.5rem 9rem;
+		background: $accentGold;
+		font-family: $headFont;
+		text-transform: uppercase;
+		color: white;
+		font-weight: 700;
+		&:hover{
+			color: $accentGold;
+			background: white;
+			border: 0.1rem solid $accentGold;
+		}
 	}
 }
 form{
@@ -34,6 +52,35 @@ form{
 .inputHolder{
 	width: calc(100% / 3);
 	position: relative;
+	margin: 0 1.75rem;
+	&:first-child{
+		margin-left: 0;
+	}
+	&:last-child{
+		margin-right: 0;
+	}
+	.iconHolder{
+		position: absolute;
+		top: 0;
+		width: 4rem;
+		height: 2rem;
+		.fa-rotate-45{
+			transform: translateX(-50%) rotate(45deg);
+		}
+	}
+}
+input, textarea{
+	background: $accentGold;
+	border: 0.1rem solid white;
+	padding: 2.3rem 0 1.8rem 2rem;
+	color: white;
+	font-size: 1.4rem;
+	line-height: 3.2rem;
+	&::placeholder{
+		color: white;
+		font-size: 1.4rem;
+		line-height: 3.2rem;
+	}
 }
 input{
 	width: 100%;
@@ -41,6 +88,7 @@ input{
 textarea{
 	width: 100%;
 	margin: 3.5rem 0;
+	resize: none;
 }
 .upArrow{
 	background: $paleGold;
