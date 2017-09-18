@@ -58,12 +58,18 @@ h6{
 	width: 1.2rem;
 	color: $accentGold;
 }
-.decorate{
-	&::after{
-		content: '';
-		height: 0.1rem;
+.decorative{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	div{
 		width: 10rem;
-		left: 0;
+		height: 0.1rem;
+		background: $accentGold;
+	}
+	.fa-rotate-45{
+		margin-left: 0.8rem;
+		margin-right: 0.8rem;
 	}
 }
 .downArrow, .upArrow{

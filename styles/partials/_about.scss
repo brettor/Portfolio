@@ -18,7 +18,7 @@
 		margin-top: 10rem;
 		max-width: 80%;
 	}
-	i{
+	.decorative{
 		margin-bottom: 5.5rem;
 	}
 	button{
@@ -45,7 +45,21 @@
 	height: 18rem;
 	transform: rotate(45deg);
 	margin: 0 auto;
-	background-image: url("../../assets/headshot.jpg");
+	position: relative;
+	overflow: hidden;
 	outline-offset: 1rem;
-	outline: 0.1rem solid $darkGrey;
+	outline: 0.1rem solid $lightGrey;
+	&::before{
+		content: "";
+		position: absolute;
+		width: 250%;
+		height: 250%;
+		top: -50%;
+		left: -50%;
+		background-image: url("../assets/headshot.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left 65% bottom -3rem;
+		transform: rotate(-45deg);
+	}
 }

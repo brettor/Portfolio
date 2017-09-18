@@ -16,6 +16,7 @@
 	justify-content: center;
 	align-items: center;
 	padding: 1rem;
+	margin: 0 2rem;
 }
 .worksDiamond{
 	width: 2rem;
@@ -50,8 +51,7 @@
 	align-items: center;
 }
 .workDescription, .workDisplay{
-	width: calc(50% - 4rem);
-	margin: 0 2rem;
+	width: calc(50% - 2rem);
 }
 .workDescription{
 	border: 0.1rem solid black;
@@ -60,6 +60,14 @@
 		font-size: 1.3rem;
 		line-height: 2.4rem;
 		margin-bottom: 2rem;
+		a{
+			font-family: $bodyFont;
+			font-weight: 400;
+			&:hover{
+				color: $accentGold;
+				border-bottom: none;
+			}
+		}
 	}
 	a{
 		font-family: $headFont;
