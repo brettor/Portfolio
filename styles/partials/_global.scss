@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	line-height: 1;
-	// border: 1px solid blue;
 }
 html{
 	font-size: 62.5%;
@@ -60,18 +59,12 @@ h6{
 	color: $accentGold;
 }
 .decorate{
-	// &::before{
-	// 	content: '';
-	// 	height: 0.1rem;
-	// 	width: 10rem;
-	// 	background: $accentGold;
-	// }
-	// &::after{
-	// 	content: '';
-	// 	height: 0.1rem;
-	// 	width: 10rem;
-	// 	background: $accentGold;
-	// }
+	&::after{
+		content: '';
+		height: 0.1rem;
+		width: 10rem;
+		left: 0;
+	}
 }
 .downArrow, .upArrow{
 	width: 4.6rem;
@@ -88,11 +81,21 @@ h6{
 .sectionHeader{
 	width: 23rem;
 	height: 6.5rem;
-	padding-top: 3rem;
-	margin: 0 auto;
+	padding-top: 2.5rem;
+	margin: 9rem auto;
+	margin-bottom: 5.5rem;
 	text-align: center;
 	border: 0.3rem solid black;
+	position: relative;
 	img{
 		margin: 0 auto;
 	}
+}
+.iconHolder{
+	width: 6.5rem;
+	background: white;
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+	top: -35%;
 }

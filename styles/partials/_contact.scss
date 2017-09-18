@@ -1,13 +1,17 @@
 #contact{
 	background: $accentGold;
 	color: white;
-	padding: 10rem 0 8.5rem 0;
+	padding: 8.5rem 0;
 	position: relative;
 	.sectionHeader{
 		border-color: white;
+		margin-top: 2rem;
 		i{
 			font-size: 4rem;
 		}
+	}
+	.iconHolder{
+		background: $accentGold;
 	}
 	p{
 		text-align: center;

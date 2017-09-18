@@ -1,5 +1,17 @@
 footer{
 	padding: 3rem 0;
+	font-size: 1.2rem;
+	font-style: italic;
+	text-align: center;
+	p{
+		width: calc(100% / 3);
+		&:first-of-type{
+		text-align: left;
+	}
+		&:last-of-type{
+			text-align: right;
+		}
+	}
 	.wrapper{
 		display: flex;
 		justify-content: space-between;

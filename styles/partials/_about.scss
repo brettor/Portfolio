@@ -1,0 +1,51 @@
+#about{
+	padding-bottom: 8rem;
+	position: relative;
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.sectionHeader{
+		margin-bottom: 10rem;
+	}
+	p{
+		text-align: center;
+		font-style: italic;
+		font-size: 1.8rem;
+		line-height: 3.2rem;
+		margin: 5.5rem auto;
+		margin-top: 10rem;
+		max-width: 80%;
+	}
+	i{
+		margin-bottom: 5.5rem;
+	}
+	button{
+		width: 16rem;
+		height: 4.5rem;
+		background: white;
+		color: $accentGold;
+		border: 0.1rem solid $accentGold;
+		outline-offset: 0.3rem;
+		outline: 0.1rem solid $accentGold;
+		font-family: $headFont;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		&:hover{
+			background: $accentGold;
+			color: white;
+			border: 0.1rem solid white;
+		}
+	}
+}
+.photoContainer{
+	width: 18rem;
+	height: 18rem;
+	transform: rotate(45deg);
+	margin: 0 auto;
+	background: url("../../assets/headshot.jpg");
+	outline-offset: 1rem;
+	outline: 0.1rem solid $darkGrey;
+}
