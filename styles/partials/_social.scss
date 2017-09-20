@@ -4,6 +4,9 @@
 	padding: 8.5rem 0 5rem 0;
 	.decorative{
 		margin: 2.5rem 0;
+		@include responsive("medium"){
+			margin: 1rem 0;
+		}
 		div{
 			height: 0.1rem;
 		}
@@ -11,10 +14,28 @@
 }
 .socialContact{
 	display: flex;
+	@include responsive("medium"){
+		flex-direction: column;
+	}
 }
 .contactItem{
 	width: calc(100% / 3);
 	text-align: center;
+	&:nth-of-type(1){
+		@include responsive("medium"){
+			order: 1;
+			margin-top: 2.5rem;
+			margin-bottom: 2.5rem;
+		}
+	}
+	&:nth-of-type(2){
+		@include responsive("medium"){
+			order: 1;
+		}
+	}
+	@include responsive("medium"){
+		width: 100%;
+	}
 	div{
 		height: 4rem;
 	}
@@ -25,6 +46,7 @@
 .socialContainer{
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	margin: 0 auto;
 	margin-top: 3rem;
 	i{
@@ -43,7 +65,15 @@
 	justify-content: center;
 	align-items: center;
 	font-size: 3rem;
+	@include responsive("medium"){
+		border: none;
+		width: 4rem;
+		height: 4rem;
+		margin: 2rem
+	}
 	i:hover{
 		color: white;
+		transform: scale(1.2) rotate(-45deg);
+		transition: all 0.3s;
 	}
 }

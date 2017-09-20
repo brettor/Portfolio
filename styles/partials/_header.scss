@@ -3,7 +3,14 @@ header{
 	background-position: center right;
 	background-repeat: no-repeat;
 	color: white;
-	padding: 3.5rem 0 2rem 0;
+	height: 100vh;
+	padding: 2rem 0;
+	@include responsive("custom"){
+		background-position: center center;
+	}
+	@include responsive("small"){
+		background-position: center left 35%;
+	}
 	.fa{
 		margin: 2rem 0;
 	}
@@ -11,10 +18,12 @@ header{
 .logo{
 	width: 6rem;
 	height: 7rem;
+	margin-left: 2rem;
 }
 .navBar{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 nav{
 	display: flex;
@@ -23,6 +32,18 @@ nav{
 	font-weight: 700;
 	text-transform: uppercase;
 	font-family: $headFont;
+	@include responsive("medium"){
+		right: -20vw;
+		width: 20vw;
+		top: 0;
+		bottom: 0;
+		position: fixed;
+		flex-direction: column;
+		justify-content: space-around;
+		transition: all 0.3s;
+		z-index: 10;
+		background: linear-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 0.75));
+	}
 	div{
 		display: flex;
 		align-items: center;
@@ -30,22 +51,31 @@ nav{
 	a{
 		padding: 1rem 2rem;
 		border: 0.1rem solid transparent;
-		&:hover{
+		&:hover, &:active, &:focus{
 			border-color: white;
+			outline: none;
+			transition: all 0.3s;
 		}
 	}
 }
-.menuButton{
+.menuOpen, .menuClose{
 	display: none;
 	font-size: 5rem;
+	margin: 0 2rem;
 	&:hover{
 		color: $accentGold;
 	}
 	@include responsive("medium"){
 		display: flex;
 		align-items: center;
-		justify-content: flex-end;
+		justify-content: flex-start;
 	}
+}
+.open{
+	right: 0;
+}
+.closed{
+	visibility: hidden;
 }
 .headingBar{
 	display: flex;
@@ -57,6 +87,13 @@ nav{
 	padding: 2.5rem 6.5rem;
 	margin-bottom: 3rem;
 	border: 0.3rem solid white;
+	@include responsive("medium"){
+		margin-left: 2rem;
+		margin-right: 2rem; 
+	}
+	@include responsive("small"){
+		padding: 2.5rem 2rem;
+	}
 }
 .downArrow{
 	border: 0.2rem solid white;

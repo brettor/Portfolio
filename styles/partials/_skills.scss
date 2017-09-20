@@ -12,28 +12,35 @@
 			background: white;
 		}
 	}
-	p{
-		font-size: 3rem;
-		font-family: $headFont;
-		font-weight: 100;
-		width: calc(100% / 7);
-		margin-bottom: 12rem;
-	}
 	h4{
-		margin-top: 5rem;
+		margin-top: 3rem;
+		@include responsive("medium"){
+			display: none;
+		}
 	}
 }
 .skillsContainer{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
+	margin-top: 4rem;
+	@include responsive("custom"){
+		padding: 0 3rem;
+	}
 }
 .skillsItem{
-	width: calc(100% / 7);
+	width: 20%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 5rem;
+	@include responsive("custom"){
+		width: 25%;
+	}
+	@include responsive("small"){
+		width: calc(100% / 3);
+	}
 }
 .skillsIcon{
 	width: 10.5rem;
@@ -43,18 +50,34 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@include responsive("medium"){
+		border: none;
+	}
 	&:hover{
 		border: 0.3rem solid $accentGold;
+		@include responsive("medium"){
+			border: none;
+		}
+	}
+	&:hover span, &:hover i, &:hover img{
+		transform: scale(1.2) rotate(-45deg);
+		transition: all 0.3s;
 	}
 	span, i, img{
-		width: 4rem;
-		font-size: 4rem;
+		width: 6rem;
+		font-size: 6rem;
 		margin: 0 auto;
 		display: block;
 		transform: rotate(-45deg);
+		@include responsive("medium"){
+			width: 8rem;
+			font-size: 8rem;
+		}
 	}
 }
-.devicons-sublime::before{
-	font-size: 6rem;
-	margin-left:-0.5rem;
+img[alt="Firebase icon"]{
+	width: 8rem;
+	@include responsive("medium"){
+		width: 10rem;
+	}
 }

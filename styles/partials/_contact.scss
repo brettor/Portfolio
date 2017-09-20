@@ -48,16 +48,32 @@ form{
 .inputContainer{
 	display: flex;
 	justify-content: space-between;
+	@include responsive("custom"){
+		padding: 0 2rem;
+	}
+	@include responsive("medium"){
+		flex-direction: column;
+	}
 }
 .inputHolder{
 	width: calc(100% / 3);
 	position: relative;
 	margin: 0 1.75rem;
+	@include responsive("medium"){
+		width: 100%;
+		margin: 0;
+	}
 	&:first-child{
 		margin-left: 0;
+		@include responsive("medium"){
+			margin-bottom: 3.5rem;
+		}
 	}
 	&:last-child{
 		margin-right: 0;
+		@include responsive("medium"){
+			margin-top: 3.5rem;
+		}
 	}
 	.iconHolder{
 		position: absolute;
@@ -89,6 +105,11 @@ textarea{
 	width: 100%;
 	margin: 3.5rem 0;
 	resize: none;
+	@include responsive("custom"){
+		margin-left: 2rem;
+		margin-right: 2rem;
+		width: calc(100% - 4rem);
+	}
 }
 .upArrow{
 	background: $paleGold;

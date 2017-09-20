@@ -5,15 +5,31 @@ footer{
 	text-align: center;
 	p{
 		width: calc(100% / 3);
+		line-height: 1.4;
 		&:first-of-type{
-		text-align: left;
-	}
+			text-align: left;
+			@include responsive("medium"){
+				text-align: center;
+				order: 2;
+			}
+		}
 		&:last-of-type{
 			text-align: right;
+			@include responsive("medium"){
+				text-align: center;
+				margin: 2rem 0;
+			}
 		}
 	}
 	.wrapper{
 		display: flex;
 		justify-content: space-between;
+		@include responsive("custom"){
+			padding: 0 2rem;
+		}
+		@include responsive("medium"){
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 }
