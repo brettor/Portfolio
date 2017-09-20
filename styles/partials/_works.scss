@@ -50,6 +50,9 @@
 	@include responsive("medium"){
 		margin: 0 2rem;
 	}
+	a{
+		transition: all 0.3s;
+	}
 }
 .worksContainer{
 	position: relative;

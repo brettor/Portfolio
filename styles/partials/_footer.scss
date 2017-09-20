@@ -32,4 +32,9 @@ footer{
 			align-items: center;
 		}
 	}
+	a:hover, a:active, a:focus{
+		outline: none;
+		color: $accentGold;
+		transition: all 0.3s;
+	}
 }
