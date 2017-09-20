@@ -13,6 +13,9 @@
 	.iconHolder{
 		background: $accentGold;
 	}
+	h3{
+		letter-spacing: 0.1rem;
+	}
 	p{
 		text-align: center;
 		margin: 4rem 0 5rem 0;
@@ -31,10 +34,7 @@
 		outline: 0.1rem solid white;
 		padding: 1.5rem 9rem;
 		background: $accentGold;
-		font-family: $headFont;
-		text-transform: uppercase;
 		color: white;
-		font-weight: 700;
 		&:hover{
 			color: $accentGold;
 			background: white;

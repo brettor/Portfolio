@@ -10,7 +10,6 @@
 		margin-bottom: 10rem;
 	}
 	p{
-		// text-align: center;
 		font-style: italic;
 		font-size: 1.8rem;
 		line-height: 3.2rem;
@@ -32,10 +31,7 @@
 		border: 0.1rem solid $accentGold;
 		outline-offset: 0.3rem;
 		outline: 0.1rem solid $accentGold;
-		font-family: $headFont;
 		font-size: 1.4rem;
-		text-transform: uppercase;
-		font-weight: 700;
 		&:hover{
 			background: $accentGold;
 			color: white;
