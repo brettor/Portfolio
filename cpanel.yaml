@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/brettnie/public_html/
+    - export DEPLOYPATH=/home/brettnie/public_html/repositories/portfolio
     - /bin/cp -R $DEPLOYPATH
